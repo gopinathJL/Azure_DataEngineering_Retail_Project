@@ -1,0 +1,205 @@
+
+---- product Table
+CREATE TABLE products (
+    product_id INT PRIMARY KEY,
+    product_name VARCHAR(100),
+    category VARCHAR(50),
+    price DECIMAL(10,2)
+);
+
+INSERT INTO products VALUES
+(1, 'Wireless Mouse', 'Electronics', 799.99),
+(2, 'Bluetooth Speaker', 'Electronics', 1299.49),
+(3, 'Yoga Mat', 'Fitness', 499.00),
+(4, 'Laptop Stand', 'Accessories', 999.99),
+(5, 'Notebook Set', 'Stationery', 149.00),
+(6, 'Water Bottle', 'Fitness', 299.00),
+(7, 'Smartwatch', 'Electronics', 4999.00),
+(8, 'Desk Organizer', 'Accessories', 399.00),
+(9, 'Dumbbell Set', 'Fitness', 1999.00),
+(10, 'Pen Drive 32GB', 'Electronics', 599.00),
+(11, 'Wireless Keyboard', 'Electronics', 1299.00),
+(12, 'Gaming Mouse Pad', 'Accessories', 349.00),
+(13, 'Protein Shaker', 'Fitness', 249.00),
+(14, 'Resistance Bands', 'Fitness', 799.00),
+(15, 'Office Chair Cushion', 'Accessories', 899.00),
+(16, 'Sticky Notes Pack', 'Stationery', 120.00),
+(17, 'Highlighter Set', 'Stationery', 199.00),
+(18, 'Portable Charger 10000mAh', 'Electronics', 1499.00),
+(19, 'HDMI Cable', 'Electronics', 299.00),
+(20, 'Cable Organizer', 'Accessories', 249.00),
+(21, 'Skipping Rope', 'Fitness', 199.00),
+(22, 'Foam Roller', 'Fitness', 899.00),
+(23, 'Laptop Cleaning Kit', 'Accessories', 349.00),
+(24, 'Ballpoint Pen Pack', 'Stationery', 99.00),
+(25, 'Monitor Screen Guard', 'Electronics', 599.00),
+(26, 'USB Hub', 'Electronics', 799.00),
+(27, 'Running Gloves', 'Fitness', 499.00),
+(28, 'Workout Towel', 'Fitness', 299.00),
+(29, 'Desk Lamp LED', 'Accessories', 1199.00),
+(30, 'File Folder Set', 'Stationery', 199.00),
+(31, 'Smartphone Tripod', 'Electronics', 899.00),
+(32, 'Wireless Earbuds', 'Electronics', 2999.00),
+(33, 'Yoga Block', 'Fitness', 399.00),
+(34, 'Push Up Bars', 'Fitness', 699.00),
+(35, 'Laptop Backpack', 'Accessories', 1899.00),
+(36, 'Desk Calendar', 'Stationery', 149.00),
+(37, 'Portable SSD 500GB', 'Electronics', 5499.00),
+(38, 'Bluetooth Tracker', 'Electronics', 1299.00),
+(39, 'Gym Gloves', 'Fitness', 599.00),
+(40, 'Adjustable Dumbbell', 'Fitness', 3499.00),
+(41, 'Tablet Stand', 'Accessories', 699.00),
+(42, 'Whiteboard Markers', 'Stationery', 249.00),
+(43, 'Wireless Presenter', 'Electronics', 999.00),
+(44, 'Desk Mat', 'Accessories', 799.00),
+(45, 'Meal Prep Containers', 'Fitness', 699.00),
+(46, 'Fitness Tracker Band', 'Electronics', 2499.00),
+(47, 'Paper Clips Box', 'Stationery', 79.00),
+(48, 'Laptop Sleeve', 'Accessories', 899.00),
+(49, 'Jump Rope Digital', 'Fitness', 899.00),
+(50, 'External Hard Drive 1TB', 'Electronics', 4599.00);
+
+-------------------------------------------------------------------------
+-- Stores Table
+CREATE TABLE stores (
+    store_id INT PRIMARY KEY,
+    store_name VARCHAR(100),
+    location VARCHAR(100)
+);
+
+INSERT INTO stores VALUES
+(1, 'City Mall Store', 'Mumbai'),
+(2, 'High Street Store', 'Delhi'),
+(3, 'Tech World Outlet', 'Bangalore'),
+(4, 'Downtown Mini Store', 'Pune'),
+(5, 'Mega Plaza', 'Chennai'),
+(6, 'Central Market Store', 'Hyderabad'),
+(7, 'Metro Mall Store', 'Kolkata'),
+(8, 'Urban Square', 'Ahmedabad'),
+(9, 'Retail Hub', 'Jaipur'),
+(10, 'Grand City Store', 'Lucknow'),
+(11, 'City Center Store', 'Chandigarh'),
+(12, 'Mall Road Outlet', 'Dehradun'),
+(13, 'Lakeside Store', 'Bhopal'),
+(14, 'Capital Retail Store', 'Patna'),
+(15, 'Riverfront Mall Store', 'Surat'),
+(16, 'Galaxy Plaza', 'Indore'),
+(17, 'Sunrise Mall Store', 'Nagpur'),
+(18, 'Harbor Point Store', 'Visakhapatnam'),
+(19, 'Silicon Square Store', 'Bangalore'),
+(20, 'Tech Park Store', 'Hyderabad'),
+(21, 'City Walk Store', 'Delhi'),
+(22, 'Business Bay Store', 'Mumbai'),
+(23, 'Royal Plaza', 'Jaipur'),
+(24, 'Green Park Store', 'Delhi'),
+(25, 'Lake View Mall', 'Udaipur'),
+(26, 'Hilltop Store', 'Shimla'),
+(27, 'Golden Market', 'Amritsar'),
+(28, 'City Arcade', 'Kochi'),
+(29, 'Marina Bay Store', 'Chennai'),
+(30, 'Pearl Plaza', 'Hyderabad'),
+(31, 'Metro Junction', 'Kolkata'),
+(32, 'North Square Store', 'Noida'),
+(33, 'South City Mall Store', 'Kolkata'),
+(34, 'Urban Street Store', 'Gurgaon'),
+(35, 'City Gate Store', 'Ahmedabad'),
+(36, 'Town Center Store', 'Pune'),
+(37, 'Garden Mall Store', 'Bangalore'),
+(38, 'Central Plaza', 'Lucknow'),
+(39, 'Market Street Store', 'Coimbatore'),
+(40, 'Retail Square', 'Madurai'),
+(41, 'Tech Valley Store', 'Bangalore'),
+(42, 'Capital Square Store', 'Delhi'),
+(43, 'Ocean View Store', 'Goa'),
+(44, 'Palm Mall Store', 'Thiruvananthapuram'),
+(45, 'Diamond Plaza', 'Kolkata'),
+(46, 'City Bazaar', 'Kanpur'),
+(47, 'Smart Retail Store', 'Noida'),
+(48, 'Mega Retail Hub', 'Hyderabad'),
+(49, 'Central Avenue Store', 'Nagpur'),
+(50, 'Skyline Mall Store', 'Mumbai');
+
+---------------------------------------------------------------------
+-- Transactions Table
+CREATE TABLE transactions (
+    transaction_id INT PRIMARY KEY,
+    customer_id INT,
+    product_id INT,
+    store_id INT,
+    quantity INT,
+    transaction_date DATE,
+    FOREIGN KEY (product_id) REFERENCES products(product_id),
+    FOREIGN KEY (store_id) REFERENCES stores(store_id)
+);
+
+
+INSERT INTO transactions VALUES (31, 111, 4, 2, 3, '2025-02-14');
+INSERT INTO transactions VALUES (32, 112, 6, 1, 2, '2024-09-18');
+INSERT INTO transactions VALUES (33, 128, 3, 5, 1, '2025-01-09');
+INSERT INTO transactions VALUES (34, 115, 10, 3, 4, '2024-10-21');
+INSERT INTO transactions VALUES (35, 129, 7, 4, 2, '2025-03-10');
+INSERT INTO transactions VALUES (36, 114, 2, 1, 3, '2024-12-25');
+INSERT INTO transactions VALUES (37, 118, 9, 2, 5, '2025-04-11');
+INSERT INTO transactions VALUES (38, 123, 5, 4, 1, '2024-11-05');
+INSERT INTO transactions VALUES (39, 102, 4, 3, 2, '2025-02-28');
+INSERT INTO transactions VALUES (40, 120, 8, 1, 3, '2024-08-16');
+INSERT INTO transactions VALUES (41, 113, 6, 5, 4, '2025-05-12');
+INSERT INTO transactions VALUES (42, 121, 3, 2, 2, '2024-09-07');
+INSERT INTO transactions VALUES (43, 124, 7, 4, 3, '2025-03-30');
+INSERT INTO transactions VALUES (44, 110, 1, 3, 1, '2024-10-19');
+INSERT INTO transactions VALUES (45, 116, 9, 2, 5, '2025-01-23');
+INSERT INTO transactions VALUES (46, 117, 8, 4, 2, '2024-12-14');
+INSERT INTO transactions VALUES (47, 122, 5, 1, 3, '2025-02-02');
+INSERT INTO transactions VALUES (48, 109, 10, 3, 4, '2024-11-27');
+INSERT INTO transactions VALUES (49, 106, 2, 5, 1, '2025-04-08');
+INSERT INTO transactions VALUES (50, 130, 6, 4, 3, '2024-09-11');
+INSERT INTO transactions VALUES (51, 101, 3, 2, 4, '2025-01-18');
+INSERT INTO transactions VALUES (52, 108, 9, 3, 2, '2024-10-03');
+INSERT INTO transactions VALUES (53, 125, 1, 1, 5, '2025-03-22');
+INSERT INTO transactions VALUES (54, 119, 4, 5, 3, '2024-08-30');
+INSERT INTO transactions VALUES (55, 118, 7, 2, 2, '2025-05-06');
+INSERT INTO transactions VALUES (56, 103, 5, 4, 1, '2024-11-13');
+INSERT INTO transactions VALUES (57, 112, 8, 3, 4, '2025-02-07');
+INSERT INTO transactions VALUES (58, 126, 6, 1, 2, '2024-12-03');
+INSERT INTO transactions VALUES (59, 104, 2, 2, 3, '2025-04-18');
+INSERT INTO transactions VALUES (60, 127, 10, 4, 1, '2024-09-25');
+INSERT INTO transactions VALUES (61, 121, 9, 5, 2, '2025-03-03');
+INSERT INTO transactions VALUES (62, 110, 7, 2, 3, '2024-10-14');
+INSERT INTO transactions VALUES (63, 115, 6, 3, 4, '2025-01-27');
+INSERT INTO transactions VALUES (64, 117, 3, 4, 2, '2024-12-08');
+INSERT INTO transactions VALUES (65, 124, 5, 1, 1, '2025-05-15');
+INSERT INTO transactions VALUES (66, 129, 2, 2, 3, '2024-11-09');
+INSERT INTO transactions VALUES (67, 106, 8, 3, 4, '2025-02-20');
+INSERT INTO transactions VALUES (68, 111, 10, 5, 2, '2024-09-28');
+INSERT INTO transactions VALUES (69, 118, 4, 4, 3, '2025-03-12');
+INSERT INTO transactions VALUES (70, 123, 1, 1, 5, '2024-10-26');
+INSERT INTO transactions VALUES (71, 101, 7, 3, 2, '2025-04-01');
+INSERT INTO transactions VALUES (72, 114, 6, 5, 3, '2024-12-22');
+INSERT INTO transactions VALUES (73, 128, 3, 4, 1, '2025-01-13');
+INSERT INTO transactions VALUES (74, 120, 9, 2, 4, '2024-11-01');
+INSERT INTO transactions VALUES (75, 122, 5, 1, 2, '2025-02-25');
+INSERT INTO transactions VALUES (76, 109, 4, 3, 3, '2024-10-17');
+INSERT INTO transactions VALUES (77, 103, 10, 4, 2, '2025-03-05');
+INSERT INTO transactions VALUES (78, 112, 8, 5, 4, '2024-09-13');
+INSERT INTO transactions VALUES (79, 127, 6, 2, 3, '2025-01-29');
+INSERT INTO transactions VALUES (80, 119, 2, 3, 1, '2024-11-23');
+INSERT INTO transactions VALUES (81, 118, 3, 1, 4, '2025-05-02');
+INSERT INTO transactions VALUES (82, 130, 9, 2, 2, '2024-12-30');
+INSERT INTO transactions VALUES (83, 105, 7, 4, 3, '2025-02-11');
+INSERT INTO transactions VALUES (84, 116, 5, 3, 2, '2024-10-06');
+INSERT INTO transactions VALUES (85, 108, 1, 1, 5, '2025-03-27');
+INSERT INTO transactions VALUES (86, 121, 10, 5, 4, '2024-09-04');
+INSERT INTO transactions VALUES (87, 124, 8, 2, 2, '2025-01-07');
+INSERT INTO transactions VALUES (88, 113, 4, 4, 3, '2024-11-20');
+INSERT INTO transactions VALUES (89, 126, 6, 3, 2, '2025-04-09');
+INSERT INTO transactions VALUES (90, 110, 2, 1, 1, '2024-12-05');
+INSERT INTO transactions VALUES (91, 115, 3, 2, 4, '2025-02-16');
+INSERT INTO transactions VALUES (92, 129, 7, 5, 2, '2024-10-28');
+INSERT INTO transactions VALUES (93, 122, 9, 4, 3, '2025-03-08');
+INSERT INTO transactions VALUES (94, 101, 6, 3, 2, '2024-11-30');
+INSERT INTO transactions VALUES (95, 118, 5, 1, 3, '2025-01-20');
+INSERT INTO transactions VALUES (96, 106, 10, 4, 4, '2024-09-15');
+INSERT INTO transactions VALUES (97, 123, 2, 5, 2, '2025-04-25');
+INSERT INTO transactions VALUES (98, 104, 8, 3, 3, '2024-12-18');
+INSERT INTO transactions VALUES (99, 111, 1, 2, 5, '2025-02-04');
+INSERT INTO transactions VALUES (100, 120, 7, 4, 3, '2025-03-14');
