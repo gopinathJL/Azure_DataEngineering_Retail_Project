@@ -1,0 +1,19 @@
+{
+	"name": "cutomersJSON",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_http_customerdata",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": "manish040596/azure-data-engineer---multi-source/refs/heads/main/customers.json"
+			}
+		},
+		"schema": {}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

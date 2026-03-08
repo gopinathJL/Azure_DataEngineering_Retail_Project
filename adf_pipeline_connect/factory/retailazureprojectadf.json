@@ -1,0 +1,9 @@
+{
+	"name": "retailazureprojectadf",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "657303be-49e4-4ce0-9272-75dc7f3a97f6",
+		"tenantId": "e7c85c36-1a92-4298-a0c7-f99650af8c69"
+	}
+}
